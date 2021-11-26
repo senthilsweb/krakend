@@ -6,8 +6,6 @@
 
 FROM devopsfaith/krakend
 
-# Move to a working directory (/build).
-RUN apk --no-cache add curl
 COPY krakend.json /etc/krakend/krakend.json
 
 EXPOSE 8080
