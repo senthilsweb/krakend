@@ -1,7 +1,7 @@
 {
     "version": 2,
     "name": "zypress api gateway",
-    "port": 3000,
+    "port": 8080,
     "cache_ttl": "3600s",
     "timeout": "5s",
     "endpoints": [

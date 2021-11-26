@@ -4,16 +4,13 @@
 # Building a backend.
 #
 
-FROM alpine
+FROM devopsfaith/krakend
 
 # Move to a working directory (/build).
-RUN mkdir -p /app
-WORKDIR /app
-COPY krakend ./
-COPY krakend.json ./
-RUN chmod 755 /app
+RUN apk --no-cache add curl
+COPY krakend.json /etc/krakend/krakend.json
 
-EXPOSE 3000
+EXPOSE 8080
 
 # Command to run when starting the container.
 #CMD ["krakend", "run", "-c", "/app/krakend.json", "-d"]
