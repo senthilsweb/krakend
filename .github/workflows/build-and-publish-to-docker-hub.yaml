@@ -1,4 +1,4 @@
-name: 'zygo - GitHub Actions'
+name: 'krakend - GitHub Actions'
 
 on:
   push:
