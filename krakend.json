@@ -1,0 +1,33 @@
+{
+    "version": 2,
+    "name": "zypress api gateway",
+    "port": 3000,
+    "cache_ttl": "3600s",
+    "timeout": "5s",
+    "endpoints": [
+      {
+        "endpoint": "/api/v1/__health",
+        "method": "GET",
+        "backend": [
+          {
+            "host": [
+              "http://localhost"
+            ],
+            "url_pattern": "/api/ping"
+          }
+        ]
+      },
+      {
+        "endpoint": "/api/v1/contacts",
+        "method": "GET",
+        "backend": [
+          {
+            "host": [
+              "http://zygo-service:3000"
+            ],
+            "url_pattern": "/api/contacts"
+          }
+        ]
+      }
+    ]
+  }

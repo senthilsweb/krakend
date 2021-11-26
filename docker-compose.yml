@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  krakend:
+    image: senthilsweb/krakend:latest
+    container_name: krakend
+    networks:
+      - backend
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3000:3000"
+networks:
+  backend:
