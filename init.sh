@@ -1,2 +1,1 @@
-echo $REST_ENDPOINT
-sed -i -r 's/^(const REST_ENDPOINT =).*/\1 $REST_ENDPOINT/' ./app.config.js
+sed -i -r 's/^(const REST_ENDPOINT =).*/\1 $REST_ENDPOINT/' /etc/krakend/app.config.js

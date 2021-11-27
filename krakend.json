@@ -6,19 +6,19 @@
     "timeout": "5s",
     "endpoints": [
       {
-        "endpoint": "/api/v1/__health",
+        "endpoint": "/rest/v1/__health",
         "method": "GET",
         "backend": [
           {
             "host": [
-              "http://localhost"
+              "http://zygo-service:3000"
             ],
             "url_pattern": "/api/ping"
           }
         ]
       },
       {
-        "endpoint": "/api/v1/contacts",
+        "endpoint": "/rest/v1/contacts",
         "method": "GET",
         "backend": [
           {
