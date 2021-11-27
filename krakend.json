@@ -25,6 +25,7 @@
             "host": [
               "http://zygo-service:3000"
             ],
+            "is_collection": true,
             "url_pattern": "/api/contacts"
           }
         ]
